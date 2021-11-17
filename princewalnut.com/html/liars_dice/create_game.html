@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Custom Game </h1>
+
+<form method="POST" action="/liars_dice/api/start">
+
+  <label for="num_players">Number of players:</label>
+  <select name="num_players" id="num_players">
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+  <br>
+
+  <label for="dice_per_player">Starting dice per player:</label>
+  <select name="dice_per_player" id="dice_per_player">
+    <option value="1">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <br>
+
+  <label for="num_lost_dice">Number of lost dice per failed challenge:</label>
+  <select name="num_lost_dice" id="num_lost_dice">
+    <option value="1">1</option>
+    <option value="0">Difference in bid</option>
+  </select>
+  <br>
+
+  <label for="spot_on">Spot-on rule:</label>
+  <input type="checkbox" name="spot_on" id="spot_on" value="1">
+  <br>
+
+  <label for="wild_ones">Wild ones rule:</label>
+  <input type="checkbox" name="wild_ones" id="wild_ones" value="1">
+  <br>
+
+  <br><br>
+  <input type="submit" value="Create Game">
+</form>
+
+</body>
+</html>
